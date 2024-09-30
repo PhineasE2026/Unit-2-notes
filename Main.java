@@ -24,6 +24,28 @@ public class Main {
       // print it. Use the value in a print statement.
       System.out.println("You entered: " + inputStr);
       // u cnan use values in expresino
-      int sum = inputInt + inputDouble;
+      double sum = inputInt + inputDouble;
+
+      // string class
+      // original way of constructing a string object
+      String message = new String("APCS is cool");
+      System.out.println(message);
+      // shortcut way of creating string
+      String greeting = "Helo coderes"; // texr inn quotes is a" string literal"
+      System.out.println(greeting);
+
+      // concatenate two or more string objects
+      String concatenated = greeting + message;
+      System.out.println(concatenated);
+      System.out.println(greeting + " " + message);
+      // can combine String vari ables and string Literal.s
+      String matlock = greeting + " " + message + " " + concatenated;
+      System.out.print(matlock);
+      System.out.println("I am " + 52 + " years old");
+      System.out.println("12" + 4 + 3); // 1243
+      System.out.println("12" + (4 + 3)); // 127
+      System.out.println(12 + 4 + 3); // Not concatenation
+      System.out.println(("12") + 4 + 3); // 1243
+
    }
 }
