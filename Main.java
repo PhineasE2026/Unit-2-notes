@@ -7,7 +7,7 @@ public class Main {
       
       // construct a scanner object. it will scan everything.
       // note: System.in() is the computer's keyboard. The scanner is going to scan the keyboard.
-      Scanner scan = new Scanner(System.in); 
+      /* Scanner scan = new Scanner(System.in); 
 
       // take input with scanner methods
       // take string input with the nextLine method. the scanner will scan this too.
@@ -25,6 +25,7 @@ public class Main {
       System.out.println("You entered: " + inputStr);
       // u cnan use values in expresino
       double sum = inputInt + inputDouble;
+      */
 
       // string class
       // original way of constructing a string object
@@ -46,6 +47,19 @@ public class Main {
       System.out.println("12" + (4 + 3)); // 127
       System.out.println(12 + 4 + 3); // Not concatenation
       System.out.println(("12") + 4 + 3); // 1243
+
+      // string methods
+      // length() returns number of char
+      int messageLength = message.length();
+      System.out.println("Length: " + messageLength);
+      int indexMessage = message.length() - 1;
+      // .LENGTH()-1 REPRESENTS FINAL INDEX.
+      System.out.println("Finale indexe : " + indexMessage);
+
+      // use index to access character(s) 
+      // susbtring(int,int)
+      String firstWord = message.substring(0,4);
+      System.out.println(firstWord);
 
    }
 }
